@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -59,7 +59,7 @@
           },
           {
             "file": "package.js",
-            "search": "process.env.npm_package_version || '([0-9.]+)'",
+            "search": "process\.env\.npm_package_version \|\| '\(\[0-9\.\]\+\)'",
             "replace": "process.env.npm_package_version || '{{version}}'"
           },
           {
