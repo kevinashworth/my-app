@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "version": "0.1.6-alpha.0",
+  "version": "0.1.6-alpha.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -53,19 +53,13 @@
       "@j-ulrich/release-it-regex-bumper": {
         "out": [
           {
-            "file": "settings-*.json",
-            "search": "\"version\":\\s*\"([0-9.]+)\"",
-            "replace": "\"version\": \"{{version}}\""
+            "file": "settings-*.json"
           },
           {
-            "file": "package.js",
-            "search": "'\\d+\\.\\d+\\.\\d+'",
-            "replace": "'{{version}}'"
+            "file": "package.js"
           },
           {
-            "file": "src/App.js",
-            "search": "version = '([0-9.]+)'",
-            "replace": "version = '{{version}}'"
+            "file": "src/App.js"
           }
         ]
       }
