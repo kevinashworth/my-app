@@ -59,8 +59,8 @@
           },
           {
             "file": "package.js",
-            "search": "|| '([0-9.]+)'",
-            "replace": "|| '{{version}}'"
+            "search": "process.env.npm_package_version || '([0-9.]+)'",
+            "replace": "process.env.npm_package_version || '{{version}}'"
           },
           {
             "file": "src/App.js",
