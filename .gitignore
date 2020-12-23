@@ -24,3 +24,6 @@ yarn-error.log*
 
 # bug
 .eslintcache
+
+# my version experiment with release-it
+settings-ignored.json
