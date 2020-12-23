@@ -59,8 +59,8 @@
           },
           {
             "file": "package.js",
-            "search": "process\.env\.npm_package_version \|\| '\(\[0-9\.\]\+\)'",
-            "replace": "process.env.npm_package_version || '{{version}}'"
+            "search": "'\\d+\\.\\d+\\.\\d+'",
+            "replace": "'{{version}}'"
           },
           {
             "file": "src/App.js",
