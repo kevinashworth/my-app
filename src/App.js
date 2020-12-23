@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   const appName = 'App'
-  const version = '0.1.6-alpha.0'
+  const version = '0.1.7'
   const keywords = appName + '@' + version
 
   return (

@@ -1,4 +1,4 @@
-const version = process.env.npm_package_version || '0.1.6-alpha.1'
+const version = process.env.npm_package_version || '0.1.7'
 
 Package.describe({
   name: 'octave',
