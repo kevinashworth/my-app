@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "@j-ulrich/release-it-regex-bumper": "^1.2.0",
     "release-it": "^14.2.2"
   },
   "release-it": {
@@ -47,6 +48,27 @@
     },
     "npm": {
       "publish": false
+    },
+    "plugins": {
+      "@j-ulrich/release-it-regex-bumper": {
+        "out": [
+          {
+            "file": "settings-*.json",
+            "search": "\"version\":\\s*\"([0-9.]+)\"",
+            "replace": "\"version\": \"{{version}}\""
+          },
+          {
+            "file": "package.js",
+            "search": "|| '([0-9.]+)'",
+            "replace": "|| '{{version}}'"
+          },
+          {
+            "file": "src/App.js",
+            "search": "version = '([0-9.]+)'",
+            "replace": "version = '{{version}}'"
+          }
+        ]
+      }
     }
   }
 }
